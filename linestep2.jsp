@@ -1,10 +1,4 @@
-<%-- 
-    Document   : linestep2
-    Created on : Jan 26, 2017, 11:58:12 PM
-    Author     : Administrator
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+/*here a table is made in which user enter the data/values they want to make the graph of.*/
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,8 +37,8 @@ Step-2
             
             %>
             </table>
-            <input type="hidden" name="comp" value=<%=comp %>  />
-            <input type="hidden" name="vals" value=<%=vals %>  />
+            <input type="hidden" name="comp" value=<%=comp %> /> /*define an hidden input field*/
+            <input type="hidden" name="vals" value=<%=vals %> />
             
             <tr>
                 <td>            <input type="checkbox" name="ch" value="ch"/> Do you want to see the data </td>
