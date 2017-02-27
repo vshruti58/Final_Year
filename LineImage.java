@@ -1,11 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+An image is generated in form of graph accourding to the data entered by th user.
  */
 package Images;
 
-import java.awt.BasicStroke;
+import java.awt.BasicStroke;/*this class states color in the default sRGB color space or colors in arbitary color spaces identified by a colorSpace.*/
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -14,10 +12,6 @@ import java.awt.geom.Line2D;
 import java.awt.image.BufferedImage;
 import java.util.Random;
 
-/**
- *
- * @author Administrator
- */
 public class LineImage {
     public static  void Generate(BufferedImage bi,String heads[],String values[],int vals,boolean dch)
     {
@@ -31,7 +25,7 @@ public class LineImage {
           Font f=new Font("Arial",Font.BOLD,30);
        
           
-   g.drawString("IT-EDU:Auto Generated LineImage Generation",250,30);
+   g.drawString("Generated LineImage Generation",250,30);/*an sting generated LineImage Generation is plced at top right side in the form.*/
     g.drawLine(50,50,50,400);
     g.drawLine(50,400,350,400);
    
@@ -58,7 +52,7 @@ public class LineImage {
             re=rm.nextInt(255);
             gr=rm.nextInt(255);
             bl=rm.nextInt(255);
-            Color c=Color.getHSBColor(re, gr, bl);
+            Color c=Color.getHSBColor(re, gr, bl);/*mix your own colors using the RGB color model when creating a new color object*/
             g.setColor(c);
            g.fillRect(380, heady, 10, 10);
             g.setColor(Color.white);
