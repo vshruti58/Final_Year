@@ -1,6 +1,6 @@
 
 /*this is the first page where user enter no of heads ,values or title required */
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
